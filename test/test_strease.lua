@@ -1,7 +1,6 @@
 -- test/test_strease.lua
 local strease = require("strease")
 
--- Simple function to print test results with a human touch
 local function check(description, result, expected)
     -- If result is a table, turn it into a string with just commas, no extra spaces
     if type(result) == "table" then
