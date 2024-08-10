@@ -9,7 +9,7 @@ To install Strease using LuaRocks:
 ```sh
 luarocks install strease
 ```
-## usage
+## Usage
 
 ```lua
 local strease = require("strease")
