@@ -147,4 +147,4 @@ print(count) -- Output: 2
 
 This library is released under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-Happy coding with Strease! If you have any questions or suggestions, feel free to reach out.
+Happy coding with Strease! If you have any questions or suggestions, feel free to reach out :)
