@@ -3,57 +3,57 @@ local strease = {}
 
 -- Trim off extra spaces from both ends of the string
 function strease.trim(s)
-    return s:match("^%s*(.-)%s*$") -- Removing leading and trailing spaces like a pro!
+    return s:match("^%s*(.-)%s*$") -- Clean up those pesky spaces on the edges.
 end
 
 -- Split the string by a separator (default is space)
 function strease.split(s, sep)
     local parts = {}
     for part in s:gmatch("([^" .. (sep or " ") .. "]+)") do
-        table.insert(parts, part) -- Split it into chunks based on the separator.
+        table.insert(parts, part) -- Break it down by the given separator.
     end
     return parts
 end
 
 -- Capitalize the first letter of each word
 function strease.capitalize(s)
-    return s:gsub("(%a)([%w]*)", function(a, b) return a:upper() .. b:lower() end) -- Making sure your text looks sharp.
+    return s:gsub("(%a)([%w]*)", function(a, b) return a:upper() .. b:lower() end) -- Make each word start with a bang.
 end
 
 -- Replace all instances of 'old' with 'new'
 function strease.replace(s, old, new)
-    return s:gsub(old, new) -- Swapping out the old for the new.
+    return s:gsub(old, new) -- Swap out the old for the shiny new.
 end
 
 -- Join table elements into a single string with a separator
 function strease.join(tbl, sep)
-    return table.concat(tbl, sep or " ") -- Putting everything together with style.
+    return table.concat(tbl, sep or " ") -- Combine everything with your choice of glue.
 end
 
 -- Convert the string to lowercase
 function strease.lower(s)
-    return s:lower() -- Lowercasing for that laid-back vibe.
+    return s:lower() -- Tone it down to lowercase.
 end
 
 -- Convert the string to uppercase
 function strease.upper(s)
-    return s:upper() -- Uppercasing for when you need to make a statement!
+    return s:upper() -- Shout it out in uppercase!
 end
 
 -- Check if the string starts with 'prefix'
 function strease.startswith(s, prefix)
-    return s:sub(1, #prefix) == prefix -- Checking if it starts right.
+    return s:sub(1, #prefix) == prefix -- Does it kick off with the right start?
 end
 
 -- Check if the string ends with 'suffix'
 function strease.endswith(s, suffix)
-    return s:sub(-#suffix) == suffix -- Checking if it ends on a high note.
+    return s:sub(-#suffix) == suffix -- Does it finish strong with the right ending?
 end
 
 -- Count occurrences of 'sub' in the string
 function strease.count(s, sub)
     local count = 0
-    for _ in s:gmatch(sub) do count = count + 1 end -- Counting how many times 'sub' shows up.
+    for _ in s:gmatch(sub) do count = count + 1 end -- Tallying up the appearances of 'sub'.
     return count
 end
 
