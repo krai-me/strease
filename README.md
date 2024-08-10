@@ -1,14 +1,14 @@
 # Strease Library
 
-Welcome to the Strease library! This handy Lua library provides various functions for string manipulation.
+Welcome to the Strease library. This Lua library is designed to make string manipulation simple and efficient. 
 
 ## Installation
 
 To install Strease using LuaRocks:
 
-{
+```sh
 luarocks install strease
-}
+```
 
 ## Functions
 
